@@ -51,13 +51,12 @@ def get_recommendations(title, cosine_sim=cosine_sim):
 
 # Example usage
     if __name__ == "__main__":
-    print("AI Movie Recommender System")
-    user_input = input("Enter a movie title: ")
-    recommendations = get_recommendations(user_input)
-    
-    print("\nTop 10 Recommendations:\n")
-    if isinstance(recommendations, str):
-        print(recommendations)
-    else:
-        for i, title in enumerate(recommendations, 1):
-            print(f"{i}. {title}")
+        print("AI Movie Recommender System")
+        user_input = input("Enter a movie title: ")
+        recommendations = get_recommendations(user_input)
+        print("\nTop 10 Recommendations:\n")
+        if isinstance(recommendations, str):
+            print(recommendations)
+            else:
+                for i, title in enumerate(recommendations, 1):
+                    print(f"{i}. {title}")
